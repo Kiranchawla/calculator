@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cal icon.png" type="image/x-icon">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    
+   </head>
+<body class="div">
+    <center>
+        <div id="output" readonly>
+           
+        <input id="display" readonly onkeypress="appendToDisplay(event)" onfocus="this.blur()">
+        <input id="resultDisplay" readonly onkeypress="Calculate()" onfocus="this.blur()">
+       
+        </div>
+       <div class="num">
+           <button id="dive" onclick='appendToDisplay("/")' class="operand">/</button>
+           <button id="clearDisplay" onclick="clearDisplay()" class="operand">C</button>  
+    <button id="mul" onclick="appendToDisplay('*')"class="operand">*</button>
+    <button id="backspace" onclick="backspace()"class="operand">&#9003;</button>
+    <button id="seven" onclick='appendToDisplay("7")'>7</button>
+    <button id="eight" onclick='appendToDisplay("8")'>8</button>
+    <button id="nine" onclick='appendToDisplay("9")'>9</button>
+    <button id="add" onclick='appendToDisplay("+")'class="operand">+</button>
+    <button id="four" onclick='appendToDisplay("4")'>4</button>
+    <button id="five" onclick='appendToDisplay("5")'>5</button>
+    <button id="six" onclick='appendToDisplay("6")'>6</button>
+     <button id="sub" onclick='appendToDisplay("-")'class="operand">-</button>
+    <button id="one" onclick="appendToDisplay('1')">1</button>
+    <button id="two" onclick='appendToDisplay("2")'>2</button>
+    <button id="three" onclick="appendToDisplay('3')">3</button>
+     <button id="dot"  onclick='squareRoot()' class="operand">√</button>
+     
+    <button id="per" onclick="appendToDisplay('%')"class="operand">%</button>
+    <button id="zero" onclick='appendToDisplay("0")'>0</button>
+    <button id="dot"  onclick='appendToDisplay(".")' class="operand">.</button>
+    <button id="Power"  onclick='appendToDisplay("^")' class="operand">^</button>
+    <button id="openBracket"  onclick='appendToDisplay("(")' class="operand">(</button>
+    <button id="CloseBracket"  onclick='appendToDisplay(")")' class="operand">)</button>
+    
+<button id="equal"  onclick="calculate()">=</button> 
+    </div>
+  
+    
+   
+    
+    
+    
+    
+   
+    
+    </center>
+    <script src="D:\git projects\calculator\calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.num{
+    /* margin-top: 20%; */
+    background-color: black;
+ display :grid;
+ 
+ padding:10px;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: reapeat(5,1fr);
+justify-content: space-between;
+height:380px;
+width:300px;
+gap:5px;
+
+}
+#resultDisplay{
+    background-color:  rgb(185, 180, 180);;
+    width:312px;
+    border:0;
+    text-align: end;
+}
+#display{
+    background-color: rgb(182, 178, 178);
+   
+    height: 80px;
+    width:312px;
+    border:0;
+}
+#display:hover{
+    background-color: rgb(182, 178, 178);
+   
+    height: 80px;
+    width:312px;
+    border:0;
+}
+#equal{
+    grid-column: span 2;
+}
+#output{
+    margin-top:80px;
+    display:grid;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    width:316px;
+    border-top-width:  3px;
+    
+    
+
+    
+    
+}
+/* #output{
+    margin-top: 100px;
+    height: 80px;
+    width: 315px;
+    background-color:rgb(138, 132, 132);
+   
+    border-style: solid;
+    
+   
+    
+}
+ */
+
+button{
+    /* flex-direction: column; */
+   
+    justify-content: space-evenly;
+    
+    border-radius: 10px;
+    margin:2px;
+}
+
+#dot{
+ font-size:e;
+}
+#backspace{
+    flex-grow: 1;
+
+}
+
+
+
+
+#equal{
+    height: auto;
+    grid-row:span 2;
+    background-color:rgb(255, 140, 0);
+    color: aliceblue;
+    border-radius:5px;
+}
+
+
+
+#equal:hover{
+    background-color: orangered;
+}
+#equal:active{
+    background-color:orange;
+}
+button.key-pressed{
+    justify-content: space-between;
+    padding-right:5px;
+    /* font-size: 35px; */
+    
+    color:aliceblue;
+    background-color: rgba(46, 46, 243, 0.897);
+}
+.operand{
+    background-color: rgb(186, 215, 241);
+}
+.div{
+    background-color: rgb(217, 233, 253);
+}
+
+
+
+button:hover{
+    justify-content: space-between;
+    padding-right:5px;
+    /* font-size: 35px; */
+    
+    color:aliceblue;
+    background-color: rgba(46, 46, 243, 0.897);
+}
+button:active{
+    border-color: white;
+    background-color: rgb(7, 7, 235);
+    border-width: 2px;
+}
+#dot{
+    font-size: 35px;
+}
+#backspace{
+    color:orangered;
+    background-color: antiquewhite;
+}
+#backspace:hover{
+    background-color:rgb(240, 191, 100);
+}
+
+
+*{
+    font-size: 25px;
+}
